@@ -1,0 +1,90 @@
+/* Top Navbar Styles */
+.navbar {
+    z-index: 1030;
+    border-bottom: 1px solid #e9ecef;
+    width: 100%;
+    margin-left: 0!important;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #6c757d !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5em;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.dropdown-item i {
+    width: 16px;
+    margin-right: 0.5rem;
+}
+
+/* Sidebar positioning below navbar */
+.sidebar {
+    position: fixed;
+    top: 70px; /* Position below navbar */
+    left: 0;
+    width: 280px;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+/* Main content adjustments */
+.main-content {
+    margin-left: 280px;
+    padding: 30px;
+    margin-top: 70px; /* Space for fixed navbar */
+    transition: margin-left 0.3s;
+}
+
+/* Sidebar Toggle Button Styles */
+#sidebarToggle {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+#sidebarToggle:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+#sidebarToggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(26, 60, 109, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Toggle button is now always visible since it's positioned after the brand */
+#sidebarToggle {
+    display: block !important;
+}

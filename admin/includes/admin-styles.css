@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #1a3c6d;
+    --secondary-color: #15325d;
+    --accent-color: #2d5a9e;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    width: 280px;
+    position: fixed;
+    top: 70px; /* Position below navbar */
+    left: 0;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.sidebar .nav-link {
+    color: white !important; /* Full white color instead of faded */
+    border-radius: 12px;
+    margin: 4px 0;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: white !important;
+    background: rgba(255,255,255,0.2); /* Slightly more visible hover effect */
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 30px;
+    margin-top: 70px; /* Space for fixed navbar */
+    transition: margin-left 0.3s;
+}
+
+/* Top Navbar Styles */
+.navbar {
+    z-index: 1030;
+    border-bottom: 1px solid #e9ecef;
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #6c757d !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5em;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.dropdown-item i {
+    width: 16px;
+    margin-right: 0.5rem;
+}
+
+/* Sidebar Toggle Button Styles */
+#sidebarToggle {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+#sidebarToggle:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+#sidebarToggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(26, 60, 109, 0.25);
+}
+
+/* Toggle button is now always visible since it's positioned after the brand */
+#sidebarToggle {
+    display: block !important;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(26, 60, 109, 0.1);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border-radius: 20px 20px 0 0 !important;
+    border: none;
+    padding: 20px 25px;
+}
+
+.table th {
+    background: #f8fafc;
+    border: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 18px 15px;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 15px;
+    border-color: #e9ecef;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(26, 60, 109, 0.05);
+}
+
+/* Stats Cards */
+.card-stats {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(26, 60, 109, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-stats:hover {
+    transform: translateY(-8px);
+}
+
+.stats-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.bg-gradient-primary { background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); }
+.bg-gradient-success { background: linear-gradient(135deg, #059669, #10b981); }
+.bg-gradient-warning { background: linear-gradient(135deg, #d97706, #f59e0b); }
+.bg-gradient-info { background: linear-gradient(135deg, #0891b2, #06b6d4); }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+}
