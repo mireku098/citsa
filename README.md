@@ -93,53 +93,27 @@ Designed for **scalability**, **maintainability**, and future mobile expansion.
 
 ---
 
-## 📸 Screenshots (Auto-Naming System)
-
-### ✅ Folder Structure
-
-```bash
-/screenshots
-```
-
-### ✅ Image Naming Convention (USE THIS)
-
-```text
-01-login.png
-02-otp-verification.png
-03-student-dashboard.png
-04-alumni-dashboard.png
-05-events-page.png
-06-event-comments.png
-07-admin-dashboard.png
-```
-
-
 
 ## 🖼️ UI Preview
 
 ### 🔐 Authentication
 
-![Login](screenshots/01-login.png)
-![OTP Verification](screenshots/02-otp-verification.png)
+![Login](screenshots/login.png)
+
 
 ### 🎓 Student Dashboard
 
-![Student Dashboard](screenshots/03-student-dashboard.png)
+![Student Dashboard](screenshots/student-dashboard.png)
 
 ### 🧑‍💼 Alumni Dashboard
 
-![Alumni Dashboard](screenshots/04-alumni-dashboard.png)
+![Alumni Dashboard](screenshots/alumni-dashboard.png)
 
 ### 📅 Events & Engagement
 
-![Events](screenshots/05-events-page.png)
-![Event Comments](screenshots/06-event-comments.png)
+![Events](screenshots/events-page.png)
+![Event Comments](screenshots/event-comments.png)
 
-### 🛠️ Admin Panel
-
-![Admin Dashboard](screenshots/07-admin-dashboard.png)
-
----
 
 ## 🔒 Security Highlights
 
@@ -162,14 +136,6 @@ Stable under moderate concurrent usage.
 
 ---
 
-## ⚠️ Current Limitations (Real Talk)
-
-* Web-only (no mobile app yet)
-* Basic chat system
-* Local hosting during development
-* No analytics dashboard (yet)
-
----
 
 ## 🔮 Planned Upgrades
 
