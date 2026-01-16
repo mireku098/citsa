@@ -101,9 +101,6 @@ Designed for **scalability**, **maintainability**, and future mobile expansion.
 ![Login](screenshots/login.png)
 
 
-### 🎓 Student Dashboard
-
-![Student Dashboard](screenshots/student-dashboard.png)
 
 ### 🧑‍💼 Alumni Dashboard
 
